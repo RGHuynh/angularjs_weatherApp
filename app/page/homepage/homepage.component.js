@@ -1,13 +1,12 @@
 (function(){
 
-  const config = {
+  var config = {
     templateUrl: '/app/page/homepage/homepage.component.html',
     controller: homepageCtrl
   };
 
   function homepageCtrl(){
     var ctrl = this;
-
     ctrl.greet = 'hello homepage';
   };
 
