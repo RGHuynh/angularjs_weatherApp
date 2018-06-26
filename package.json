@@ -1,0 +1,24 @@
+{
+  "name": "angularjs_weatherapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RGHuynh/angularjs_weatherApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RGHuynh/angularjs_weatherApp/issues"
+  },
+  "homepage": "https://github.com/RGHuynh/angularjs_weatherApp#readme",
+  "dependencies": {
+    "angular": "^1.7.2",
+    "angular-route": "^1.7.2",
+    "bootstrap": "^4.1.1"
+  }
+}
