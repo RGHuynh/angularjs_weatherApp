@@ -7,7 +7,7 @@
 
   function weatherHeaderCtrl(){
     var ctrl = this;
-    ctrl.greet = "AngularJS Weather";
+    ctrl.header = "AngularJS Weather";
   };
 
   angular
