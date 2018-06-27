@@ -12,6 +12,7 @@
     function getWeather(cityInput){
       weatherApiService.getWeather(cityInput).then(function successfulCallBack(response){
         console.log(response);
+        weatherApiService.data.push(response);
       });
     } 
   };
