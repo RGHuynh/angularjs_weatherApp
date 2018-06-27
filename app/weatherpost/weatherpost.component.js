@@ -4,10 +4,13 @@
     controller: weatherPostCtrl
   }
 
-  function weatherPostCtrl(weatherApiService){
+  function weatherPostCtrl(weatherPostService){
     var ctrl = this;
-    ctrl.data = weatherApiService.data;
-    ctrl.temp= weatherApiService.data;
+    ctrl.data = weatherPostService.data;
+    ctrl.tempMin = weatherPostService.getWeatherTempMin;
+    ctrl.tempMax = weatherPostService.getWeatherTempMax;
+    ctrl.currentLocation = weatherPostService.getCurrentLocation;
+    ctrl.currentTemp = weatherPostService.getCurrentTemp;
   };
 
   angular

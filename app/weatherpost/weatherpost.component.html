@@ -1,4 +1,12 @@
-<div ng-if="$ctrl.data.length > 0" >
-  <label>Temp Min</label>{{$ctrl.temp[0].data.main.temp_min}}
-  <label>Temp Max</label>{{$ctrl.temp[0].data.main.temp_max}}
-</div>
+<section class="content-section text-center" ng-if="$ctrl.data.length > 0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h3>{{$ctrl.currentLocation()}}</h3>
+        <h4>Current Temp</h4><h6>{{$ctrl.currentTemp()}}</h6>
+        <h4>Temp Min:</h4><h6>{{$ctrl.tempMin()}}</h6>
+        <h4>Temp Max:</h4><h6>{{$ctrl.tempMax()}}</h6>
+      </div>
+    </div>
+  </div>
+</section>
