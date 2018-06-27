@@ -4,9 +4,17 @@
     controller: searchBarCtrl
   }
 
-  function searchBarCtrl(){
+  function searchBarCtrl(weatherApiService){
     var ctrl = this;
-    ctrl.greeting = 'hello searchBar'
+    ctrl.cityInput = '';
+    ctrl.getWeather = getWeather
+    
+    function getWeather(cityInput){
+      weatherApiService.getWeather(cityInput).then(function successfulCallBack(response){
+        console.log(response);
+        weatherApiService.data.push(response);
+      });
+    } 
   };
 
   angular
