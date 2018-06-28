@@ -14,9 +14,10 @@
       function getWeather(cityName){
         return $http({
           method: "GET",
-          url: "http://api.openweathermap.org/data/2.5/weather?q="+ cityName + "&APPID=bfa7398f10a823c9eb5d78005f24717d"
+          data: {city: cityName},
+          url: "http://localhost:3000/weather_apis.json"
         }).then(function successfullCallback(response){
-          return response;
+            return response;
         })
       }
       
